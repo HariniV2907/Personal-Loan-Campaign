@@ -1,71 +1,78 @@
-# 🏦 AllLife Bank Personal Loan Prediction  
+# 💰 Personal Loan Campaign Project
 
-## 📌 Context  
-AllLife Bank, a US-based bank, has a growing customer base. Most of its customers are **liability customers** (depositors), while only a small portion are **asset customers** (borrowers). The bank wants to expand its loan business by converting existing liability customers into personal loan customers, while retaining them as depositors.  
+## 📄 Project Overview
+AllLife Bank is a leading U.S. bank with a large and growing customer base. Most customers are **liability customers (depositors)**, while only a small portion are **asset customers (borrowers)**.  
+To expand its loan business, the bank aims to identify existing deposit customers who are most likely to take personal loans.  
 
-Last year’s campaign targeting liability customers achieved a **9% conversion rate**, encouraging the retail marketing department to run improved campaigns with better targeting.  
-
-As a **Data Scientist**, your task is to build a model that helps identify customers with a **high probability of accepting personal loans**.  
-
----
-
-## 🎯 Objective  
-- Predict whether a liability customer will purchase a personal loan.  
-- Understand which customer attributes influence loan purchase decisions.  
-- Identify customer segments with higher likelihood of conversion.  
-- Support the marketing department in running more effective campaigns.  
+This project builds a **predictive machine learning model** to identify such customers and provides insights for **targeted marketing campaigns**.
 
 ---
 
-## 📊 Data Dictionary  
-
-The dataset includes the following customer attributes:  
-
-| Column Name        | Description |
-|--------------------|-------------|
-| `ID`              | Customer ID |
-| `Age`             | Customer’s age (in years) |
-| `Experience`      | Years of professional experience |
-| `Income`          | Annual income (in $1000s) |
-| `ZIP Code`        | Home address ZIP code |
-| `Family`          | Family size |
-| `CCAvg`           | Average monthly credit card spending (in $1000s) |
-| `Education`       | Education level → 1: Undergrad, 2: Graduate, 3: Professional |
-| `Mortgage`        | Value of house mortgage (in $1000s) |
-| `Personal_Loan`   | Target variable → 1: Accepted, 0: Not accepted |
-| `Securities_Account` | Does the customer have a securities account? (0/1) |
-| `CD_Account`      | Does the customer have a certificate of deposit (CD) account? (0/1) |
-| `Online`          | Does the customer use internet banking? (0/1) |
-| `CreditCard`      | Does the customer use a credit card from another bank? (0/1) |
+## 🎯 Objective
+To analyze customer data and build a predictive model that helps the marketing team:
+- Identify potential customers who are likely to accept a personal loan offer.
+- Understand the most influential customer attributes driving loan purchases.
+- Recommend customer segments for focused marketing efforts to increase campaign success.
 
 ---
 
-## 🚀 Key Tasks  
-- Perform **Exploratory Data Analysis (EDA)** to understand customer profiles.  
-- Identify significant attributes influencing personal loan purchases.  
-- Build **predictive models** (e.g., Logistic Regression, Decision Trees, Random Forest, XGBoost).  
-- Evaluate models using metrics like Accuracy, Precision, Recall, F1-score, and AUC.  
-- Provide insights and recommendations for targeted marketing.  
+## 📊 Dataset Description
+**File:** `Loan_Modelling.csv`
+
+| Column Name | Description |
+|--------------|-------------|
+| `ID` | Unique Customer ID |
+| `Age` | Customer’s age in completed years |
+| `Experience` | Years of professional experience |
+| `Income` | Annual income (in thousand dollars) |
+| `ZIP Code` | Customer’s residential ZIP code |
+| `Family` | Family size of the customer |
+| `CCAvg` | Average monthly credit card spending (in thousand dollars) |
+| `Education` | 1: Undergrad, 2: Graduate, 3: Advanced/Professional |
+| `Mortgage` | Value of house mortgage (in thousand dollars) |
+| `Personal_Loan` | Target variable — accepted the personal loan (1) or not (0) |
+| `Securities_Account` | Has a securities account (1 = Yes, 0 = No) |
+| `CD_Account` | Has a certificate of deposit (CD) account (1 = Yes, 0 = No) |
+| `Online` | Uses internet banking (1 = Yes, 0 = No) |
+| `CreditCard` | Uses a credit card from another bank (1 = Yes, 0 = No) |
 
 ---
 
-## 🛠️ Tech Stack  
-- **Python** 🐍  
-- **Pandas / NumPy** – Data manipulation  
-- **Matplotlib / Seaborn** – Data visualization  
-- **Scikit-learn** – Machine Learning models  
-- **Jupyter Notebook** – Analysis workflow  
+## 🧠 Key Analysis Performed
+- Data cleaning, preprocessing, and feature engineering.  
+- Exploratory Data Analysis (EDA) to understand relationships between customer attributes and loan acceptance.  
+- Visualization of key trends (income, education, family size, online usage, etc.).  
+- Feature selection and model training using **classification algorithms**.  
+- Evaluation using metrics such as **accuracy, precision, recall, F1-score, and ROC-AUC**.  
+- Identification of significant variables driving loan acceptance.
 
 ---
 
-## 📌 Expected Outcomes  
-- A predictive model that classifies customers as likely/unlikely to purchase a personal loan.  
-- Insights on key drivers such as **income, credit card spending, education level, and online banking usage**.  
-- Customer segmentation for effective **target marketing campaigns**.  
-- Improved success ratio beyond the previous 9% conversion rate.  
+## 📈 Technologies Used
+- **Python** (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
+- **Google Colab**  
+- **HTML Report Generation:** `Personal_Loan_Campaign_Week2_Project.html`
 
 ---
 
-## 📁 Files
-- `Personal_Loan_Campaign.html` – Complete workflow
-- ` Loan_Modelling.csv` – Input data (not shared due to confidentiality)
+## 📂 Project Structure
+- `Loan_Modelling.csv` — Dataset  
+- `Personal_Loan_Campaign_Week2_Project.html` — Project report
+
+---
+
+## 🔍 Insights Summary
+- Customers with **higher income** and **higher education levels** showed a greater likelihood of taking loans.  
+- Customers who **use online banking** and **hold CD accounts** were more responsive to loan offers.  
+- **Credit card spending (CCAvg)** and **family size** were significant behavioral indicators.  
+- A well-defined segment of customers can be targeted to improve the **conversion rate beyond 9%** achieved in the previous campaign.
+
+---
+
+## 🏁 Conclusion
+**The predictive model helps AllLife Bank:**
+- Identify and prioritize high-potential customers for loan marketing.  
+- Design personalized offers for specific customer groups.  
+- Improve marketing efficiency and return on investment (ROI).  
+- Strengthen the bank’s overall cross-selling strategy while retaining deposit customers.
+
