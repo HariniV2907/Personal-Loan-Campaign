@@ -49,7 +49,7 @@ To analyze customer data and build a predictive model that helps the marketing t
 ---
 
 ## 📈 Technologies Used
-- **Python** (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)  
+- **Python** (Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn, Decision Tree)  
 - **Google Colab**  
 - **HTML Report Generation:** `Personal_Loan_Campaign_Week2_Project.html`
 
